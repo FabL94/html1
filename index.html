@@ -6,16 +6,19 @@
     <meta name="description" content="Базовые знания по html, css; резюме">
     <title>Резюме Александр</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        
+    </style>
 </head>
 <body>
     <header>
     <table cellspacing="15">
         <tr>
-            <td><img src="avatar.jpeg" width="100" alt="Мое фото"></td>
+            <td><img src="avatar.jpeg" width="200" alt="Мое фото"></td>
             <td><h1>Alexander</h1>
                 <div>
                 <p>I am an information security specialist</p>
-                <p>I love traveling, running, drawing in 3D and programming и сосиску с сыром</p>
+                <p>I love traveling, running, drawing in 3D and programming</p>
                 </div>
             </td>
         </tr>
@@ -26,6 +29,7 @@
     <div class="card social">
         <h2>Мои социальные сети</h2>
             <a href="https://instagram.com/alexvmarchenko" target="_blank" class="btn">Instagram</a>
+            |
             <a href="https://t.me/FabL94" target="_blank" class="btn">Telegram</a>  
     </div>
 
@@ -42,7 +46,7 @@
 <hr>
     <div class="card work">
         <h2>Опыт работы</h2>
-        <table border="1">
+        <table border="1px">
             <tr>
                 <th>Компания</th>
                 <th>Должность</th>
@@ -64,29 +68,28 @@
     </div>
 <hr>
 
-<h2>Связаться со мной</h2>
 
-<form action="/">
-    <label for="name">Ваше имя:</label>
-    <input type="text" id="name" placeholder="Введите имя...">
-    <br>
 
-    <label for="email">Ваш email:</label>
-    <input type="email" id="email" placeholder="name@mail.com">
-    <br>
+<form action="/" class="sell">
+        <h2>Связаться со мной</h2>
+    <div class="form-row"></div>
+        <div class="form-gr">
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" placeholder="Введите имя...">
+        </div>
+        <div class="form-gr">
+            <label for="email">Ваш email:</label>
+            <input type="email" id="email" placeholder="name@mail.com">
+        </div>
+    </div>
 
-    <label for="password">Пароль</label>
-    <input type="password" id="password">
-    <br>
-
-    <label for="text">Ваше сообщение:</label>
-    <textarea name="text" id="text" rows="2" cols="5"></textarea>
-    <br>
-
-    <input type="submit" value="Связаться!" class="btn">
+    <div class="form-gr">  
+        <label for="text">Ваше сообщение:</label>
+        <textarea name="text" id="text" rows="5" cols="50" placeholder="Введите сообщение..."></textarea>
+        
+    </div>   
+    <input type="submit" value="Связаться!" class="btn"> 
 </form>
-
-<p>Lorem ipsum dolor sit amet.</p>
 
 </body>
 </html>
